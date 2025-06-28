@@ -1,120 +1,150 @@
 <!DOCTYPE html>
 <html lang="id">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Ryoma Shop - Role, Asset & Citem</title>
   <style>
     body {
-      font-family: sans-serif;
-      background-color: #f2f2f2;
-      text-align: center;
-      padding: 20px;
-      color: #333;
+      margin: 0;
+      font-family: 'Segoe UI', sans-serif;
+      background-color: #0f0f0f;
+      color: #fff;
     }
-    h1 {
-      color: #2c3e50;
+    header {
+      background-color: #1e1e1e;
+      padding: 20px;
+      text-align: center;
+      border-bottom: 2px solid #444;
+    }
+    header h1 {
+      margin: 0;
+      color: #00ffcc;
+    }
+    header p {
+      margin-top: 5px;
+      font-size: 14px;
+      color: #ccc;
+    }
+    .container {
+      max-width: 1000px;
+      margin: auto;
+      padding: 20px;
     }
     .section {
+      margin-bottom: 40px;
+    }
+    .section h2 {
+      border-bottom: 2px solid #00ffcc;
+      padding-bottom: 10px;
+      margin-bottom: 20px;
+      color: #00ffcc;
+    }
+    .card {
+      background-color: #1e1e1e;
+      margin: 10px 0;
+      padding: 15px 20px;
+      border-radius: 10px;
+      box-shadow: 0 0 5px rgba(0,255,255,0.2);
+    }
+    .card-header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+    .card small {
+      color: #ccc;
+      display: block;
+      margin: 5px 0 10px 0;
+    }
+    .pay-btn {
+      display: inline-block;
+      padding: 6px 12px;
+      background-color: #00c853;
+      color: white;
+      border-radius: 6px;
+      text-decoration: none;
+      font-size: 14px;
+    }
+    .pay-btn:hover {
+      background-color: #00e676;
+    }
+    .button-container {
+      text-align: center;
       margin: 30px 0;
     }
-    .box {
-      background: white;
-      padding: 15px;
-      border-radius: 10px;
-      max-width: 600px;
-      margin: 10px auto;
-      box-shadow: 0 2px 6px rgba(0,0,0,0.1);
-      text-align: left;
-    }
-    .title {
-      font-weight: bold;
-      margin-bottom: 10px;
-      font-size: 1.2em;
-    }
-    .price {
-      color: green;
-      float: right;
-    }
-    a.button {
+    .btn {
       display: inline-block;
+      padding: 12px 24px;
       margin: 10px;
-      padding: 12px 20px;
-      background-color: #27ae60;
-      color: white;
-      border-radius: 8px;
+      border-radius: 10px;
       text-decoration: none;
       font-weight: bold;
+      transition: background 0.3s;
     }
-    a.button.payment {
-      background-color: #2980b9;
+    .btn-daftar {
+      background-color: #00c853;
+      color: white;
+    }
+    .btn-bayar {
+      background-color: #2962ff;
+      color: white;
+    }
+    footer {
+      text-align: center;
+      font-size: 13px;
+      padding: 20px;
+      color: #888;
     }
   </style>
 </head>
 <body>
-  <h1>🛒 Ryoma Shop</h1>
-  <p>Menjual Role, Asset, Citem — Bayar dan daftar otomatis lewat WhatsApp!</p>
+  <header>
+    <h1>🛒 Ryoma Shop</h1>
+    <p>Jual Role, Asset, dan Citem dengan pembayaran otomatis lewat WA</p>
+  </header>
 
-  <div class="section">
-    <a href="https://wa.me/6288976695274?text=.daftar%20ryoma%7C18" class="button">📝 Daftar</a>
-    <a href="https://wa.me/6288976695274?text=.payment" class="button payment">💸 Pembayaran</a>
-  </div>
+  <div class="container">
+    <div class="button-container">
+      <a href="https://wa.me/6288976695274?text=.daftar%20ryoma%7C18" class="btn btn-daftar">📝 Daftar Sekarang</a>
+      <a href="https://wa.me/6288976695274?text=.payment" class="btn btn-bayar">💸 Bayar Manual</a>
+    </div>
 
-  <div class="section">
-    <h2>💎 Role</h2>
-    <div class="box"><span class="title">VIP</span><span class="price">FREE</span></div>
-    <div class="box"><span class="title">MODERATOR</span><span class="price">30.000</span></div>
-    <div class="box"><span class="title">SUPER MODERATOR</span><span class="price">40.000</span></div>
-    <div class="box"><span class="title">DEVELOPER</span><span class="price">50.000</span></div>
-    <div class="box"><span class="title">SUPER DEVELOPER</span><span class="price">70.000</span></div>
-    <div class="box"><span class="title">STAFF</span><span class="price">100.000</span></div>
-    <div class="box"><span class="title">CO OWNER</span><span class="price">100.000</span></div>
-  </div>
+    <div class="section">
+      <h2>💎 Role</h2>
+      <div class="card"><div class="card-header"><span>VIP</span><strong>FREE</strong></div><a class="pay-btn" href="https://wa.me/6288976695274?text=.payment%20VIP">Bayar Sekarang</a></div>
+      <div class="card"><div class="card-header"><span>MODERATOR</span><strong>30.000</strong></div><a class="pay-btn" href="https://wa.me/6288976695274?text=.payment%20MODERATOR">Bayar Sekarang</a></div>
+      <div class="card"><div class="card-header"><span>SUPER MODERATOR</span><strong>40.000</strong></div><a class="pay-btn" href="https://wa.me/6288976695274?text=.payment%20SUPER%20MODERATOR">Bayar Sekarang</a></div>
+      <div class="card"><div class="card-header"><span>DEVELOPER</span><strong>50.000</strong></div><a class="pay-btn" href="https://wa.me/6288976695274?text=.payment%20DEVELOPER">Bayar Sekarang</a></div>
+      <div class="card"><div class="card-header"><span>SUPER DEVELOPER</span><strong>70.000</strong></div><a class="pay-btn" href="https://wa.me/6288976695274?text=.payment%20SUPER%20DEVELOPER">Bayar Sekarang</a></div>
+      <div class="card"><div class="card-header"><span>STAFF</span><strong>100.000</strong></div><a class="pay-btn" href="https://wa.me/6288976695274?text=.payment%20STAFF">Bayar Sekarang</a></div>
+      <div class="card"><div class="card-header"><span>CO OWNER</span><strong>100.000</strong></div><a class="pay-btn" href="https://wa.me/6288976695274?text=.payment%20CO%20OWNER">Bayar Sekarang</a></div>
+    </div>
 
-  <div class="section">
-    <h2>📦 Asset</h2>
-    <div class="box"><span class="title">CHEAT ROLE</span><span class="price">5.000</span></div>
-    <div class="box"><span class="title">TITLE BLUE</span><span class="price">10.000</span></div>
-    <div class="box"><span class="title">TITLE MENTOR</span><span class="price">15.000</span></div>
-    <div class="box"><span class="title">TITLE G4G</span><span class="price">15.000</span></div>
-    <div class="box"><span class="title">TITLE DR</span><span class="price">FREE</span></div>
-    <div class="box"><span class="title">TITLE LEGEND</span><span class="price">FREE</span></div>
-  </div>
+    <div class="section">
+      <h2>📦 Asset</h2>
+      <div class="card"><div class="card-header"><span>CHEAT ROLE</span><strong>5.000</strong></div><a class="pay-btn" href="https://wa.me/6288976695274?text=.payment%20CHEAT%20ROLE">Bayar Sekarang</a></div>
+      <div class="card"><div class="card-header"><span>TITLE BLUE</span><strong>10.000</strong></div><a class="pay-btn" href="https://wa.me/6288976695274?text=.payment%20TITLE%20BLUE">Bayar Sekarang</a></div>
+      <div class="card"><div class="card-header"><span>TITLE MENTOR</span><strong>15.000</strong></div><a class="pay-btn" href="https://wa.me/6288976695274?text=.payment%20TITLE%20MENTOR">Bayar Sekarang</a></div>
+      <div class="card"><div class="card-header"><span>TITLE G4G</span><strong>15.000</strong></div><a class="pay-btn" href="https://wa.me/6288976695274?text=.payment%20TITLE%20G4G">Bayar Sekarang</a></div>
+      <div class="card"><div class="card-header"><span>TITLE DR</span><strong>FREE</strong></div><a class="pay-btn" href="https://wa.me/6288976695274?text=.payment%20TITLE%20DR">Bayar Sekarang</a></div>
+      <div class="card"><div class="card-header"><span>TITLE LEGEND</span><strong>FREE</strong></div><a class="pay-btn" href="https://wa.me/6288976695274?text=.payment%20TITLE%20LEGEND">Bayar Sekarang</a></div>
+    </div>
 
-  <div class="section">
-    <h2>⚔️ Citem</h2>
-    <div class="box">
-      <span class="title">WHIP OF TRUTH</span><span class="price">40.000</span><br>
-      <small>(xgems200 xexp100) — 10 Farm</small>
-    </div>
-    <div class="box">
-      <span class="title">SERPENT RAINBOW</span><span class="price">20.000</span><br>
-      <small>(xgems100 xexp50) — 7 Farm</small>
-    </div>
-    <div class="box">
-      <span class="title">LEVI</span><span class="price">10.000</span><br>
-      <small>(xp50)</small>
-    </div>
-    <div class="box">
-      <span class="title">SASUKE</span><span class="price">15.000</span><br>
-      <small>(xp100)</small>
-    </div>
-    <div class="box">
-      <span class="title">SUNG JIN WO</span><span class="price">50.000</span><br>
-      <small>(xp250 gems250)</small>
-    </div>
-    <div class="box">
-      <span class="title">ICHIGO FOSTO</span><span class="price">30.000</span><br>
-      <small>(xp100 gems100)</small>
-    </div>
-    <div class="box">
-      <span class="title">SHANKS</span><span class="price">30.000</span><br>
-      <small>(xp100 gems100)</small>
+    <div class="section">
+      <h2>⚔️ Citem</h2>
+      <div class="card"><div class="card-header"><span>WHIP OF TRUTH</span><strong>40.000</strong></div><small>xgems200 xexp100 (10 Far)</small><a class="pay-btn" href="https://wa.me/6288976695274?text=.payment%20WHIP%20OF%20TRUTH">Bayar Sekarang</a></div>
+      <div class="card"><div class="card-header"><span>SERPENT RAINBOW</span><strong>20.000</strong></div><small>xgems100 xexp50 (7 Farm)</small><a class="pay-btn" href="https://wa.me/6288976695274?text=.payment%20SERPENT%20RAINBOW">Bayar Sekarang</a></div>
+      <div class="card"><div class="card-header"><span>LEVI</span><strong>10.000</strong></div><small>xp50</small><a class="pay-btn" href="https://wa.me/6288976695274?text=.payment%20LEVI">Bayar Sekarang</a></div>
+      <div class="card"><div class="card-header"><span>SASUKE</span><strong>15.000</strong></div><small>xp100</small><a class="pay-btn" href="https://wa.me/6288976695274?text=.payment%20SASUKE">Bayar Sekarang</a></div>
+      <div class="card"><div class="card-header"><span>SUNG JIN WO</span><strong>50.000</strong></div><small>xp250 gems250</small><a class="pay-btn" href="https://wa.me/6288976695274?text=.payment%20SUNG%20JIN%20WO">Bayar Sekarang</a></div>
+      <div class="card"><div class="card-header"><span>ICHIGO FOSTO</span><strong>30.000</strong></div><small>xp100 gems100</small><a class="pay-btn" href="https://wa.me/6288976695274?text=.payment%20ICHIGO%20FOSTO">Bayar Sekarang</a></div>
+      <div class="card"><div class="card-header"><span>SHANKS</span><strong>30.000</strong></div><small>xp100 gems100</small><a class="pay-btn" href="https://wa.me/6288976695274?text=.payment%20SHANKS">Bayar Sekarang</a></div>
     </div>
   </div>
 
-  <div class="section">
-    <p>📱 Bot WA: <strong>6288976695274</strong> — Jangan lupa ketik <code>.daftar ryoma|18</code> & <code>.payment</code></p>
-  </div>
+  <footer>
+    Nomor WA Bot: 6288976695274 · Powered by Ryoma
+  </footer>
 </body>
-      </html>
+                                                                  </html>
