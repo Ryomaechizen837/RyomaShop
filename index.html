@@ -1,4 +1,6 @@
-<!-- Mulai dari sini -->
+<!-- Kode HTML final terlalu panjang untuk satu balasan, saya akan kirim dalam bagian-bagian -->
+<!-- Mulai bagian 1: Header dan Role -->
+
 <!DOCTYPE html>
 <html lang="id">
 <head>
@@ -7,158 +9,276 @@
   <title>Ryoma Role & Asset</title>
   <style>
     body {
+      margin: 0;
       font-family: 'Segoe UI', sans-serif;
-      background-color: #0f0f0f;
-      color: #ffffff;
-      margin: 0;
-      padding: 0;
-    }
-    header {
-      background-color: #1c1c1c;
-      padding: 20px;
-      text-align: center;
-      border-bottom: 2px solid #00ffcc;
-    }
-    header h1 {
-      color: #00ffcc;
-      margin: 0;
-    }
-    .container {
-      max-width: 1000px;
-      margin: auto;
-      padding: 20px;
-    }
-    .section {
-      margin-top: 30px;
-    }
-    .section h2 {
-      color: #00ffcc;
-      border-bottom: 1px solid #00ffcc;
-      padding-bottom: 5px;
-    }
-    .card-modern {
-      background-color: #1e1e1e;
-      margin: 15px 0;
-      padding: 20px;
-      border-radius: 12px;
-      box-shadow: 0 0 10px rgba(0, 255, 255, 0.2);
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-      flex-wrap: wrap;
-    }
-    .card-info {
-      flex: 1;
-    }
-    .card-info h3 {
-      margin: 0 0 5px 0;
-      font-size: 20px;
-      color: #ffffff;
-    }
-    .card-info p {
-      margin: 0;
-      color: #ccc;
-      font-size: 14px;
-    }
-    .price {
-      display: block;
-      margin-top: 5px;
-      font-size: 16px;
-      color: #00ffcc;
-      font-weight: bold;
-    }
-    .checkout-btn {
-      background-color: #00c853;
+      background: #0a0f24;
       color: white;
-      text-decoration: none;
-      padding: 10px 20px;
-      border-radius: 8px;
+    }
+
+    header {
+      text-align: center;
+      padding: 30px 20px 10px;
+    }
+
+    header h1 {
+      font-size: 32px;
+      color: #00e6ff;
+      text-shadow: 0 0 15px #00e6ff;
+      margin-bottom: 10px;
+    }
+
+    header p {
+      font-size: 16px;
+      color: #bbb;
+    }
+
+    .container {
+      max-width: 900px;
+      margin: 30px auto;
+      padding: 20px;
+    }
+
+    .section {
+      margin-top: 40px;
+    }
+
+    .section h2 {
+      font-size: 22px;
+      text-align: center;
+      color: #00e6ff;
+      text-shadow: 0 0 10px #00e6ff;
+      margin-bottom: 20px;
+    }
+
+    .card {
+      background: #101932;
+      border-left: 5px solid #00e6ff;
+      border-radius: 12px;
+      padding: 20px;
+      margin-bottom: 20px;
+      box-shadow: 0 0 10px rgba(0, 230, 255, 0.2);
+    }
+
+    .card h3 {
+      color: #00cfff;
+      margin: 0 0 10px;
+    }
+
+    .card p {
+      margin: 5px 0;
+      font-size: 14px;
+      color: #ccc;
+    }
+
+    .price {
+      color: #00ffea;
       font-weight: bold;
-      transition: background 0.3s;
+      margin-top: 10px;
     }
-    .checkout-btn:hover {
-      background-color: #00e676;
+
+    .btn-order {
+      display: inline-block;
+      margin-top: 10px;
+      padding: 10px 20px;
+      background: #00c9ff;
+      color: white;
+      border-radius: 10px;
+      font-weight: bold;
+      text-decoration: none;
+      box-shadow: 0 0 10px #00c9ff;
     }
+
+    .btn-order:hover {
+      background: #00e6ff;
+    }
+
     footer {
       text-align: center;
       padding: 20px;
-      color: #777;
       font-size: 14px;
+      color: #666;
     }
   </style>
 </head>
 <body>
-  <header>
-    <h1>🛒 Ryoma Shop</h1>
-    <p>Role, Asset & Citem Murah Bayar Otomatis via WA</p>
-  </header>
 
-  <div class="container">
+<header>
+  <h1>🛒 Ryoma Shop</h1>
+  <p>Role, Asset & Citem Murah · Bayar Otomatis via WhatsApp</p>
+</header>
 
-    <!-- 👑 Role -->
-    <section class="section">
-      <h2>👑 Role</h2>
-      <div class="card-modern">
-        <div class="card-info"><h3>VIP</h3><p>Commands:superbreak, vsb, cheats, setspam, demotemyself</p><span class="price">FREE</span></div>
-        <a class="checkout-btn" href="https://wa.me/6288976695274?text=.payment%20VIP">Bayar Sekarang</a>
-      </div>
-      <div class="card-modern">
-        <div class="card-info"><h3>MODERATOR</h3><p>Commands:gemrain, sdb, cheats, setspam, getdaily</p><span class="price">30.000</span></div>
-        <a class="checkout-btn" href="https://wa.me/6288976695274?text=.payment%20MODERATOR">Bayar Sekarang</a>
-      </div>
-      <div class="card-modern">
-        <div class="card-info"><h3>SUPER MODERATOR</h3><p>Commands:
-longpunch, skiptime, unsilence, silence, warpto, hide, hideflag, nick, ghost, msb, info, mod, track, online, warn</p><span class="price">40.000</span></div>
-        <a class="checkout-btn" href="https://wa.me/6288976695274?text=.payment%20SUPER%20MODERATOR">Bayar Sekarang</a>
-      </div>
-      <div class="card-modern">
-        <div class="card-info"><h3>DEVELOPER</h3><p>Commands:
- pullall, freeze, freezeall, danceall, daball, dance2all, showerall, rolleyesall, furiousall, omgall, yesall, idkall, foldall, noall, sassyall, fpall, waveall, loveall, lolall, trollall, cheerall, smhall, shyall, grumpyall, faceall, cryall, sleepall, pull</p><span class="price">50.000</span></div>
-        <a class="checkout-btn" href="https://wa.me/6288976695274?text=.payment%20DEVELOPER">Bayar Sekarang</a>
-      </div>
-      <div class="card-modern">
-        <div class="card-info"><h3>SUPER DEVELOPER</h3><p>Commands:
-tpclick, f, find, banall</p><span class="price">70.000</span></div>
-        <a class="checkout-btn" href="https://wa.me/6288976695274?text=.payment%20SUPER%20DEVELOPER">Bayar Sekarang</a>
-      </div>
-      <div class="card-modern">
-        <div class="card-info"><h3>STAFF</h3><p>spk, f, find, pets, who, me, redeem, sethome, home, rate, setspam, cheats, stockallvend, stockallmag, emptyallvend, emptyallmag, clearinv, cleardrop, clearworld, invis, info, iteminfo, setweather, setpunch, longpunch, weather, pull</p><span class="price">100.000</span></div>
-        <a class="checkout-btn" href="https://wa.me/6288976695274?text=.payment%20STAFF">Bayar Sekarang</a>
-      </div>
-      <div class="card-modern">
-        <div class="card-info"><h3>CO OWNER</h3><p>givd, drop, get, f, clearinv, cleardrop, cheats, setspam, rate, home, sethome, redeem, who, pets, setpunch, clearworld, editinv, editbp, setevent, setdailyevent, takeworld, renameworld, givexp, replace, resetworld, givetitle, stockallmag, stockallvend, emptyallvend, emptyallmag, gemevent, find</p><span class="price">100.000</span></div>
-        <a class="checkout-btn" href="https://wa.me/6288976695274?text=.payment%20CO%20OWNER">Bayar Sekarang</a>
-      </div>
-    </section>
+<div class="container">
 
-    <!-- 💎 Asset -->
-    <section class="section">
-      <h2>💎 Asset</h2>
-      <div class="card-modern"><div class="card-info"><h3>CHEAT ROLE</h3><p>Fitur rahasia</p><span class="price">5.000</span></div><a class="checkout-btn" href="https://wa.me/6288976695274?text=.payment%20CHEAT%20ROLE">Bayar Sekarang</a></div>
-      <div class="card-modern"><div class="card-info"><h3>TITLE BLUE</h3><p>Badge warna biru</p><span class="price">10.000</span></div><a class="checkout-btn" href="https://wa.me/6288976695274?text=.payment%20TITLE%20BLUE">Bayar Sekarang</a></div>
-      <div class="card-modern"><div class="card-info"><h3>TITLE MENTOR</h3><p>Badge mentor</p><span class="price">15.000</span></div><a class="checkout-btn" href="https://wa.me/6288976695274?text=.payment%20TITLE%20MENTOR">Bayar Sekarang</a></div>
-      <div class="card-modern"><div class="card-info"><h3>TITLE G4G</h3><p>Badge khusus komunitas</p><span class="price">15.000</span></div><a class="checkout-btn" href="https://wa.me/6288976695274?text=.payment%20TITLE%20G4G">Bayar Sekarang</a></div>
-      <div class="card-modern"><div class="card-info"><h3>TITLE DR</h3><p>Badge Doktor</p><span class="price">FREE</span></div><a class="checkout-btn" href="https://wa.me/6288976695274?text=.payment%20TITLE%20DR">Bayar Sekarang</a></div>
-      <div class="card-modern"><div class="card-info"><h3>TITLE LEGEND</h3><p>Badge Legenda</p><span class="price">FREE</span></div><a class="checkout-btn" href="https://wa.me/6288976695274?text=.payment%20TITLE%20LEGEND">Bayar Sekarang</a></div>
-    </section>
+<!-- SECTION: ROLE -->
+<section class="section">
+  <h2>👑 Role</h2>
 
-    <!-- ⚔️ Citem -->
-    <section class="section">
-      <h2>⚔️ Citem</h2>
-      <div class="card-modern"><div class="card-info"><h3>WHIP OF TRUTH</h3><p>xgems200 xexp100 · 10 Far</p><span class="price">40.000</span></div><a class="checkout-btn" href="https://wa.me/6288976695274?text=.payment%20WHIP%20OF%20TRUTH">Bayar Sekarang</a></div>
-      <div class="card-modern"><div class="card-info"><h3>SERPENT RAINBOW</h3><p>xgems100 + xexp50 · 7 Farm</p><span class="price">20.000</span></div><a class="checkout-btn" href="https://wa.me/6288976695274?text=.payment%20SERPENT%20RAINBOW">Bayar Sekarang</a></div>
-      <div class="card-modern"><div class="card-info"><h3>LEVI</h3><p>xp50</p><span class="price">10.000</span></div><a class="checkout-btn" href="https://wa.me/6288976695274?text=.payment%20LEVI">Bayar Sekarang</a></div>
-      <div class="card-modern"><div class="card-info"><h3>SASUKE</h3><p>xp100</p><span class="price">15.000</span></div><a class="checkout-btn" href="https://wa.me/6288976695274?text=.payment%20SASUKE">Bayar Sekarang</a></div>
-      <div class="card-modern"><div class="card-info"><h3>SUNG JIN WO</h3><p>xp250 gems250</p><span class="price">50.000</span></div><a class="checkout-btn" href="https://wa.me/6288976695274?text=.payment%20SUNG%20JIN%20WO">Bayar Sekarang</a></div>
-      <div class="card-modern"><div class="card-info"><h3>ICHIGO FOSTO</h3><p>xp100 gems100</p><span class="price">30.000</span></div><a class="checkout-btn" href="https://wa.me/6288976695274?text=.payment%20ICHIGO%20FOSTO">Bayar Sekarang</a></div>
-      <div class="card-modern"><div class="card-info"><h3>SHANKS</h3><p>xp100 gems100</p><span class="price">30.000</span></div><a class="checkout-btn" href="https://wa.me/6288976695274?text=.payment%20SHANKS">Bayar Sekarang</a></div>
-    </section>
-
+  <div class="card">
+    <h3>VIP</h3>
+    <p>Commands: superbreak, vsb, cheats, setspam, demotemyself</p>
+    <div class="price">Rp 0</div>
+    <a class="btn-order" href="https://wa.me/6288976695274?text=.payment%20VIP%200">Bayar Sekarang</a>
   </div>
 
-  <footer>
-    Nomor WA Bot: 6288976695274 · Powered by Ryoma © 2025
-  </footer>
+  <div class="card">
+    <h3>MODERATOR</h3>
+    <p>Commands: gemrain, sdb, cheats, setspam, getdaily</p>
+    <div class="price">Rp 30.000</div>
+    <a class="btn-order" href="https://wa.me/6288976695274?text=.payment%20MODERATOR%2030000">Bayar Sekarang</a>
+  </div>
+
+  <div class="card">
+    <h3>SUPER MODERATOR</h3>
+    <p>Commands: longpunch, skiptime, unsilence, silence, warpto, hide, hideflag, nick, ghost, msb, info, mod, track, online, warn</p>
+    <div class="price">Rp 40.000</div>
+    <a class="btn-order" href="https://wa.me/6288976695274?text=.payment%20SUPER%20MODERATOR%2040000">Bayar Sekarang</a>
+  </div>
+
+  <div class="card">
+    <h3>DEVELOPER</h3>
+    <p>Commands: pullall, freeze, freezeall, danceall, daball, dance2all, showerall, rolleyesall, furiousall, omgall, yesall, idkall, foldall, noall, sassyall, fpall, waveall, loveall, lolall, trollall, cheerall, smhall, shyall, grumpyall, faceall, cryall, sleepall, pull</p>
+    <div class="price">Rp 50.000</div>
+    <a class="btn-order" href="https://wa.me/6288976695274?text=.payment%20DEVELOPER%2050000">Bayar Sekarang</a>
+  </div>
+
+  <div class="card">
+    <h3>SUPER DEVELOPER</h3>
+    <p>Commands: tpclick, f, find, banall</p>
+    <div class="price">Rp 70.000</div>
+    <a class="btn-order" href="https://wa.me/6288976695274?text=.payment%20SUPER%20DEVELOPER%2070000">Bayar Sekarang</a>
+  </div>
+
+  <div class="card">
+    <h3>STAFF</h3>
+    <p>Commands: spk, f, find, pets, who, me, redeem, sethome, home, rate, setspam, cheats, stockallvend, stockallmag, emptyallvend, emptyallmag, clearinv, cleardrop, clearworld, invis, info, iteminfo, setweather, setpunch, longpunch, weather, pull</p>
+    <div class="price">Rp 100.000</div>
+    <a class="btn-order" href="https://wa.me/6288976695274?text=.payment%20STAFF%20100000">Bayar Sekarang</a>
+  </div>
+
+  <div class="card">
+    <h3>CO OWNER</h3>
+    <p>Commands: givd, drop, get, f, clearinv, cleardrop, cheats, setspam, rate, home, sethome, redeem, who, pets, setpunch, clearworld, editinv, editbp, setevent, setdailyevent, takeworld, renameworld, givexp, replace, resetworld, givetitle, stockallmag, stockallvend, emptyallvend, emptyallmag, gemevent, find</p>
+    <div class="price">Rp 200.000</div>
+    <a class="btn-order" href="https://wa.me/6288976695274?text=.payment%20CO%20OWNER%20200000">Bayar Sekarang</a>
+  </div>
+
+  <div class="card">
+    <h3>SUPER SUPPORTER</h3>
+    <p>Commands: warp, hidestatus</p>
+    <div class="price">Rp 10.000</div>
+    <a class="btn-order" href="https://wa.me/6288976695274?text=.payment%20SUPER%20SUPPORTER%2010000">Bayar Sekarang</a>
+  </div>
+
+</section>
+<!-- Lanjutan dari bagian sebelumnya -->
+
+<!-- SECTION: ASSET -->
+<section class="section">
+  <h2>💎 Asset</h2>
+
+  <div class="card">
+    <h3>CHEAT ROLE</h3>
+    <p>Fitur rahasia</p>
+    <div class="price">Rp 5.000</div>
+    <a class="btn-order" href="https://wa.me/6288976695274?text=.payment%20CHEAT%20ROLE%205000">Bayar Sekarang</a>
+  </div>
+
+  <div class="card">
+    <h3>TITLE BLUE</h3>
+    <p>Badge warna biru</p>
+    <div class="price">Rp 10.000</div>
+    <a class="btn-order" href="https://wa.me/6288976695274?text=.payment%20TITLE%20BLUE%2010000">Bayar Sekarang</a>
+  </div>
+
+  <div class="card">
+    <h3>TITLE MENTOR</h3>
+    <p>Badge mentor</p>
+    <div class="price">Rp 15.000</div>
+    <a class="btn-order" href="https://wa.me/6288976695274?text=.payment%20TITLE%20MENTOR%2015000">Bayar Sekarang</a>
+  </div>
+
+  <div class="card">
+    <h3>TITLE G4G</h3>
+    <p>Badge komunitas</p>
+    <div class="price">Rp 15.000</div>
+    <a class="btn-order" href="https://wa.me/6288976695274?text=.payment%20TITLE%20G4G%2015000">Bayar Sekarang</a>
+  </div>
+
+  <div class="card">
+    <h3>TITLE DR</h3>
+    <p>Badge Doktor</p>
+    <div class="price">Rp 0</div>
+    <a class="btn-order" href="https://wa.me/6288976695274?text=.payment%20TITLE%20DR%200">Bayar Sekarang</a>
+  </div>
+
+  <div class="card">
+    <h3>TITLE LEGEND</h3>
+    <p>Badge Legenda</p>
+    <div class="price">Rp 0</div>
+    <a class="btn-order" href="https://wa.me/6288976695274?text=.payment%20TITLE%20LEGEND%200">Bayar Sekarang</a>
+  </div>
+</section>
+
+<!-- SECTION: CITEM -->
+<section class="section">
+  <h2>⚔️ Citem</h2>
+
+  <div class="card">
+    <h3>WHIP OF TRUTH</h3>
+    <p>xgems200 xexp100 · 10 Far</p>
+    <div class="price">Rp 40.000</div>
+    <a class="btn-order" href="https://wa.me/6288976695274?text=.payment%20WHIP%20OF%20TRUTH%2040000">Bayar Sekarang</a>
+  </div>
+
+  <div class="card">
+    <h3>SERPENT RAINBOW</h3>
+    <p>xgems100 + xexp50 · 7 Farm</p>
+    <div class="price">Rp 20.000</div>
+    <a class="btn-order" href="https://wa.me/6288976695274?text=.payment%20SERPENT%20RAINBOW%2020000">Bayar Sekarang</a>
+  </div>
+
+  <div class="card">
+    <h3>LEVI</h3>
+    <p>xp50</p>
+    <div class="price">Rp 10.000</div>
+    <a class="btn-order" href="https://wa.me/6288976695274?text=.payment%20LEVI%2010000">Bayar Sekarang</a>
+  </div>
+
+  <div class="card">
+    <h3>SASUKE</h3>
+    <p>xp100</p>
+    <div class="price">Rp 15.000</div>
+    <a class="btn-order" href="https://wa.me/6288976695274?text=.payment%20SASUKE%2015000">Bayar Sekarang</a>
+  </div>
+
+  <div class="card">
+    <h3>SUNG JIN WO</h3>
+    <p>xp250 gems250</p>
+    <div class="price">Rp 50.000</div>
+    <a class="btn-order" href="https://wa.me/6288976695274?text=.payment%20SUNG%20JIN%20WO%2050000">Bayar Sekarang</a>
+  </div>
+
+  <div class="card">
+    <h3>ICHIGO FOSTO</h3>
+    <p>xp100 gems100</p>
+    <div class="price">Rp 30.000</div>
+    <a class="btn-order" href="https://wa.me/6288976695274?text=.payment%20ICHIGO%20FOSTO%2030000">Bayar Sekarang</a>
+  </div>
+
+  <div class="card">
+    <h3>SHANKS</h3>
+    <p>xp100 gems100</p>
+    <div class="price">Rp 30.000</div>
+    <a class="btn-order" href="https://wa.me/6288976695274?text=.payment%20SHANKS%2030000">Bayar Sekarang</a>
+  </div>
+
+</section>
+
+</div>
+
+<footer>
+  Powered by Ryoma
+</footer>
+
 </body>
 </html>
-<!-- Selesai -->
